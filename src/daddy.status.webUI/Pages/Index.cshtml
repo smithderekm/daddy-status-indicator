@@ -1,0 +1,39 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <h1 class="display-4">Daddy Status Console</h1>
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    Dad Availability
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Set Dad's current availability</h5>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button id="setAvailableButton" type="button" class="btn btn-success" onclick="UpdateAvailability(available);">Available</button>
+                        <button id="setOccupiedButton" type="button" class="btn btn-danger" onclick="UpdateAvailability(occupied);">In a Meeting</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    System Messages
+                </div>
+                <div class="card-body">
+                    <ul id="messages" class="list-group">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
